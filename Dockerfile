@@ -1,5 +1,5 @@
 FROM php:7.1-apache
-MAINTAINER gerald.luzangi@gmail.com
+MAINTAINER Gerald Luzangi "gerald.luzangi@gmail.com"
 
 RUN a2enmod rewrite
 RUN apt-get update && apt-get install -y \
