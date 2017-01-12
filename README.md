@@ -1,5 +1,3 @@
-# docker.apache-php
-
 ## HOW TO BUILD A DOCKER IMAGE
 
 + To build the PHP7 image running on Apache2.4 webserver execute the following steps:
