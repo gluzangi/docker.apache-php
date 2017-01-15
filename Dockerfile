@@ -1,4 +1,4 @@
-FROM php:7.1-apache
+FROM php:5.6-apache
 MAINTAINER Gerald Luzangi "gerald.luzangi@gmail.com"
 
 RUN a2enmod rewrite
