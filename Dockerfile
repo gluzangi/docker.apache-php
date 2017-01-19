@@ -3,6 +3,7 @@ MAINTAINER Gerald Luzangi "gerald.luzangi@gmail.com"
 
 RUN a2enmod rewrite
 RUN apt-get update && apt-get install -y \
+	ssmtp \
 	libc-client-dev \
 	libfreetype6-dev \
 	libgeoip-dev \
@@ -26,3 +27,5 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-enable geoip
 
 COPY config/php.ini /usr/local/etc/php/
+COPY config/php-ssmtp.ini /usr/local/etc/php/conf.d/
+COPY config/ssmtp.conf /etc/ssmtp/
